@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-    font-size: 22px; /* Reduced size */
+    font-size: 30px; /* Reduced size */
     font-weight: 700;
     color: #fff;
 }
@@ -43,8 +43,8 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 14px; /* Reduced font size */
-    transition: color 0.3s;
+    font-size: 20px; /* Reduced font size */
+    transition: color 0.s;
 }
 
 nav ul li a:hover {
@@ -71,7 +71,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 #hero {
-    height: 80vh; /* Adjusted height */
+    height: 70vh; /* Adjusted height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +102,51 @@ nav ul li a:hover {
 .hero-content span {
     color: #00ff99;
 }
+
+
+
+
+//* About Section Styling */
+//* About Section Styling */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Typewriter Effect */
+.typewriter-line {
+    font-size: 1.2rem;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 10px auto;
+    visibility: visible; /* Ensures text is always visible */
+    white-space: nowrap;
+    border-right: 2px solid #00ff99;
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+    .typewriter-line {
+        font-size: 1rem;
+        max-width: 100%;
+        white-space: wrap; /* Allow text wrapping on small screens */
+    }
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+    .typewriter-line {
+        font-size: 1rem;
+        max-width: 90%;
+        white-space: wrap; /* Allow text wrapping on small screens */
+    }
+}
+
+
 
 /* Social Media Icons */
 .social-links {
@@ -208,6 +253,63 @@ footer {
     
     .project-card {
         width: 90%;
+    }
+}
+/* Resume & Social Links Section */
+.resume-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+/* Resume Button */
+.resume-btn {
+    font-size: 1rem; /* Slightly bigger */
+    padding: 12px 24px; /* More padding */
+    background: #00ff99;
+    color: #0D0D0D;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.resume-btn:hover {
+    background: #009966;
+    transform: scale(1.1);
+}
+
+/* Social Media Icons */
+/* Social Media Links in Contact Section */
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    font-size: 28px;
+    color: #00ff99;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    color: #009966;
+    transform: scale(1.2);
+
+}
+@media (max-width: 768px) {
+    .social-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .social-links a {
+        font-size: 24px;
     }
 }
 
